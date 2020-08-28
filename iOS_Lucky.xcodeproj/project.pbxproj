@@ -15,6 +15,11 @@
 		102017CD24F9740100E4F7BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102017CB24F9740100E4F7BB /* LaunchScreen.storyboard */; };
 		105E93B724F975D30074F91F /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E93B624F975D30074F91F /* UIColor+Additions.swift */; };
 		105E93B924F975DA0074F91F /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E93B824F975DA0074F91F /* UIFont+Additions.swift */; };
+		105E93BC24F976C00074F91F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E93BA24F976C00074F91F /* HomeViewController.swift */; };
+		105E93BD24F976C00074F91F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105E93BB24F976C00074F91F /* HomeViewController.xib */; };
+		105E93C424F977100074F91F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E93C224F977100074F91F /* MapViewController.swift */; };
+		105E93C524F977100074F91F /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105E93C324F977100074F91F /* MapViewController.xib */; };
+		105E93C724F977380074F91F /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E93C624F977380074F91F /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		102017CE24F9740100E4F7BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		105E93B624F975D30074F91F /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		105E93B824F975DA0074F91F /* UIFont+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
+		105E93BA24F976C00074F91F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		105E93BB24F976C00074F91F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		105E93C224F977100074F91F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		105E93C324F977100074F91F /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		105E93C624F977380074F91F /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		10C3A48928B9DE142AD7EC76 /* Pods_iOS_Lucky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Lucky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5EA5755DDD844FA4B77F59D /* Pods-iOS_Lucky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Lucky.release.xcconfig"; path = "Target Support Files/Pods-iOS_Lucky/Pods-iOS_Lucky.release.xcconfig"; sourceTree = "<group>"; };
 		E56D38C983AFA91CC1AEA9EB /* Pods-iOS_Lucky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Lucky.debug.xcconfig"; path = "Target Support Files/Pods-iOS_Lucky/Pods-iOS_Lucky.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +99,8 @@
 		102017D524F9742200E4F7BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				105E93C124F977020074F91F /* Map */,
+				105E93BE24F976D10074F91F /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +108,9 @@
 		102017D624F9742900E4F7BB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				105E93C024F976FC0074F91F /* Map */,
+				105E93BF24F976E20074F91F /* Home */,
+				105E93C624F977380074F91F /* CustomTabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -123,6 +138,38 @@
 				105E93B624F975D30074F91F /* UIColor+Additions.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		105E93BE24F976D10074F91F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				105E93BB24F976C00074F91F /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		105E93BF24F976E20074F91F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				105E93BA24F976C00074F91F /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		105E93C024F976FC0074F91F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				105E93C224F977100074F91F /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		105E93C124F977020074F91F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				105E93C324F977100074F91F /* MapViewController.xib */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		55CF5E83F8BE91891A7C9389 /* Pods */ = {
@@ -203,6 +250,8 @@
 			files = (
 				102017CD24F9740100E4F7BB /* LaunchScreen.storyboard in Resources */,
 				102017CA24F9740100E4F7BB /* Assets.xcassets in Resources */,
+				105E93BD24F976C00074F91F /* HomeViewController.xib in Resources */,
+				105E93C524F977100074F91F /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,9 +289,12 @@
 			files = (
 				102017C524F973FF00E4F7BB /* ViewController.swift in Sources */,
 				105E93B924F975DA0074F91F /* UIFont+Additions.swift in Sources */,
+				105E93C724F977380074F91F /* CustomTabBarController.swift in Sources */,
 				105E93B724F975D30074F91F /* UIColor+Additions.swift in Sources */,
 				102017C124F973FF00E4F7BB /* AppDelegate.swift in Sources */,
 				102017C324F973FF00E4F7BB /* SceneDelegate.swift in Sources */,
+				105E93BC24F976C00074F91F /* HomeViewController.swift in Sources */,
+				105E93C424F977100074F91F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
