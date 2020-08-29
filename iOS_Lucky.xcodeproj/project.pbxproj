@@ -20,6 +20,10 @@
 		105E93C424F977100074F91F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E93C224F977100074F91F /* MapViewController.swift */; };
 		105E93C524F977100074F91F /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105E93C324F977100074F91F /* MapViewController.xib */; };
 		105E93C724F977380074F91F /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E93C624F977380074F91F /* CustomTabBarController.swift */; };
+		10ECB52224FAAC670065341F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ECB52024FAAC670065341F /* ProfileViewController.swift */; };
+		10ECB52324FAAC670065341F /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10ECB52124FAAC670065341F /* ProfileViewController.xib */; };
+		10ECB52624FAAC7F0065341F /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ECB52424FAAC7F0065341F /* MoreViewController.swift */; };
+		10ECB52724FAAC7F0065341F /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10ECB52524FAAC7F0065341F /* MoreViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		105E93C324F977100074F91F /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		105E93C624F977380074F91F /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		10C3A48928B9DE142AD7EC76 /* Pods_iOS_Lucky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Lucky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10ECB52024FAAC670065341F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		10ECB52124FAAC670065341F /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		10ECB52424FAAC7F0065341F /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		10ECB52524FAAC7F0065341F /* MoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
 		C5EA5755DDD844FA4B77F59D /* Pods-iOS_Lucky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Lucky.release.xcconfig"; path = "Target Support Files/Pods-iOS_Lucky/Pods-iOS_Lucky.release.xcconfig"; sourceTree = "<group>"; };
 		E56D38C983AFA91CC1AEA9EB /* Pods-iOS_Lucky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Lucky.debug.xcconfig"; path = "Target Support Files/Pods-iOS_Lucky/Pods-iOS_Lucky.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101ED51924FAB24800854D19 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				102017CB24F9740100E4F7BB /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		102017B424F973FF00E4F7BB = {
 			isa = PBXGroup;
 			children = (
@@ -75,15 +91,14 @@
 		102017BF24F973FF00E4F7BB /* iOS_Lucky */ = {
 			isa = PBXGroup;
 			children = (
-				102017D724F9743600E4F7BB /* Utilities */,
-				102017D624F9742900E4F7BB /* Controllers */,
-				102017D524F9742200E4F7BB /* Views */,
-				102017D424F9741400E4F7BB /* Supporting Files */,
 				102017C024F973FF00E4F7BB /* AppDelegate.swift */,
 				102017C224F973FF00E4F7BB /* SceneDelegate.swift */,
 				102017C424F973FF00E4F7BB /* ViewController.swift */,
 				102017C924F9740100E4F7BB /* Assets.xcassets */,
-				102017CB24F9740100E4F7BB /* LaunchScreen.storyboard */,
+				102017D724F9743600E4F7BB /* Utilities */,
+				102017D624F9742900E4F7BB /* Controllers */,
+				102017D524F9742200E4F7BB /* Views */,
+				102017D424F9741400E4F7BB /* Supporting Files */,
 			);
 			path = iOS_Lucky;
 			sourceTree = "<group>";
@@ -99,6 +114,9 @@
 		102017D524F9742200E4F7BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				101ED51924FAB24800854D19 /* Launch */,
+				10ECB51F24FAAC4C0065341F /* More */,
+				10ECB51E24FAAC470065341F /* Profile */,
 				105E93C124F977020074F91F /* Map */,
 				105E93BE24F976D10074F91F /* Home */,
 			);
@@ -108,6 +126,8 @@
 		102017D624F9742900E4F7BB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				10ECB51C24FAAC240065341F /* Profile */,
+				10ECB51D24FAAC2B0065341F /* More */,
 				105E93C024F976FC0074F91F /* Map */,
 				105E93BF24F976E20074F91F /* Home */,
 				105E93C624F977380074F91F /* CustomTabBarController.swift */,
@@ -170,6 +190,38 @@
 				105E93C324F977100074F91F /* MapViewController.xib */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		10ECB51C24FAAC240065341F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				10ECB52024FAAC670065341F /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		10ECB51D24FAAC2B0065341F /* More */ = {
+			isa = PBXGroup;
+			children = (
+				10ECB52424FAAC7F0065341F /* MoreViewController.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		10ECB51E24FAAC470065341F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				10ECB52124FAAC670065341F /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		10ECB51F24FAAC4C0065341F /* More */ = {
+			isa = PBXGroup;
+			children = (
+				10ECB52524FAAC7F0065341F /* MoreViewController.xib */,
+			);
+			path = More;
 			sourceTree = "<group>";
 		};
 		55CF5E83F8BE91891A7C9389 /* Pods */ = {
@@ -249,8 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				102017CD24F9740100E4F7BB /* LaunchScreen.storyboard in Resources */,
+				10ECB52724FAAC7F0065341F /* MoreViewController.xib in Resources */,
 				102017CA24F9740100E4F7BB /* Assets.xcassets in Resources */,
 				105E93BD24F976C00074F91F /* HomeViewController.xib in Resources */,
+				10ECB52324FAAC670065341F /* ProfileViewController.xib in Resources */,
 				105E93C524F977100074F91F /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +346,9 @@
 				105E93C724F977380074F91F /* CustomTabBarController.swift in Sources */,
 				105E93B724F975D30074F91F /* UIColor+Additions.swift in Sources */,
 				102017C124F973FF00E4F7BB /* AppDelegate.swift in Sources */,
+				10ECB52624FAAC7F0065341F /* MoreViewController.swift in Sources */,
 				102017C324F973FF00E4F7BB /* SceneDelegate.swift in Sources */,
+				10ECB52224FAAC670065341F /* ProfileViewController.swift in Sources */,
 				105E93BC24F976C00074F91F /* HomeViewController.swift in Sources */,
 				105E93C424F977100074F91F /* MapViewController.swift in Sources */,
 			);

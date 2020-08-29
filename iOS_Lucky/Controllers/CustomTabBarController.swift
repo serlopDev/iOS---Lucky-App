@@ -15,7 +15,7 @@ class CustomTabBarController: UITabBarController{
         
         // Creamos el array para los controladores
         
-        self.viewControllers = []
+        self.viewControllers = [homeControllerTabBar, MapControllerTabBar, ProfileControllerTabBar, MoreControllerTabBar]
     }
     
     
@@ -37,7 +37,7 @@ class CustomTabBarController: UITabBarController{
         
         // Creamos el TabBarItem
         
-        let tabBarItem = UITabBarItem(title: "Home", image: nil, selectedImage: nil)
+        let tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Home_ico"), selectedImage: UIImage(named: "Home_selected_ico"))
         
         // Asociamos el item a la barra del menú
         
@@ -48,16 +48,37 @@ class CustomTabBarController: UITabBarController{
         return homeControllerTab
     }()
     
-    // MAP
+    // MAPA
     
     lazy var MapControllerTabBar: MapViewController = {
         
         let mapControllerTab = MapViewController()
-        let tabBarItem = UITabBarItem(title: "Mapa", image: nil, selectedImage: nil)
-        
+        let tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Map_ico"), selectedImage: UIImage(named: "Map_selected_ico"))
         mapControllerTab.tabBarItem =  tabBarItem
         
         return mapControllerTab
+    }()
+    
+    // PERFIL
+    
+    lazy var ProfileControllerTabBar: ProfileViewController = {
+        
+        let profileControllerTab = ProfileViewController()
+        let tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Profile_ico"), selectedImage: UIImage(named: "Profile_selected_ico"))
+        profileControllerTab.tabBarItem = tabBarItem
+       
+        return profileControllerTab
+    }()
+    
+    // MÁS
+    
+    lazy var MoreControllerTabBar: MoreViewController = {
+        
+        let moreControllerTab = MoreViewController()
+        let tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "More_ico"), selectedImage: UIImage(named: "More_selected_ico"))
+        moreControllerTab.tabBarItem = tabBarItem
+        
+        return moreControllerTab
     }()
 
 }
