@@ -31,19 +31,21 @@ class CustomTabBarController: UITabBarController{
     
     lazy var homeControllerTabBar: HomeViewController = {
         
-        // Instanciamos  nuestro controlador
+        // Instanciar el controlador
         
         let homeControllerTab = HomeViewController()
         
-        // Creamos el TabBarItem
+        // Crear el TabBarItem
+        let image = UIImage(named: "Home_ico")
+        let selectedImage = UIImage(named: "Home_selected_ico")
         
-        let tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Home_ico"), selectedImage: UIImage(named: "Home_selected_ico"))
+        let tabBarItem = UITabBarItem(title: nil, image: image, selectedImage: selectedImage)
         
-        // Asociamos el item a la barra del menú
+        // Asociar el item a la barra del menú
         
         homeControllerTab.tabBarItem =  tabBarItem
         
-        // Creamos el objeto
+        // Crear el objeto
         
         return homeControllerTab
     }()
@@ -53,8 +55,11 @@ class CustomTabBarController: UITabBarController{
     lazy var MapControllerTabBar: MapViewController = {
         
         let mapControllerTab = MapViewController()
-        let tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Map_ico"), selectedImage: UIImage(named: "Map_selected_ico"))
+        let image =  UIImage(named: "Map_ico")
+        let selectedImage = UIImage(named: "Map_selected_ico")
+        let tabBarItem = UITabBarItem(title: nil, image: image, selectedImage: selectedImage)
         mapControllerTab.tabBarItem =  tabBarItem
+        
         
         return mapControllerTab
     }()
@@ -64,7 +69,9 @@ class CustomTabBarController: UITabBarController{
     lazy var ProfileControllerTabBar: ProfileViewController = {
         
         let profileControllerTab = ProfileViewController()
-        let tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Profile_ico"), selectedImage: UIImage(named: "Profile_selected_ico"))
+        let image = UIImage(named: "Profile_ico")
+        let selectedImage = UIImage(named: "Profile_selected_ico")
+        let tabBarItem = UITabBarItem(title: nil, image: image, selectedImage: selectedImage)
         profileControllerTab.tabBarItem = tabBarItem
        
         return profileControllerTab
@@ -75,7 +82,9 @@ class CustomTabBarController: UITabBarController{
     lazy var MoreControllerTabBar: MoreViewController = {
         
         let moreControllerTab = MoreViewController()
-        let tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "More_ico"), selectedImage: UIImage(named: "More_selected_ico"))
+        let image = UIImage(named: "More_ico")
+        let selectedImage = UIImage(named: "More_selected_ico")
+        let tabBarItem = UITabBarItem(title: nil, image: image, selectedImage: selectedImage)
         moreControllerTab.tabBarItem = tabBarItem
         
         return moreControllerTab
